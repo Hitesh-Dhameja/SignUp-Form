@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SignUp</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<img class="wave" src="img/wave.png">
+
+	<div class="container">
+
+		<div class="img">
+			<img src="img/bg.svg">
+		</div>
+
+		<div class="login-content">
+			<form action="index.html">
+				<img src="img/avatar.svg">
+				<h2 class="title">Welcome</h2>
+
+				<div class="input-div one">
+					<div class="i">
+							<i class="fas fa-user"></i>
+					</div>
+					<div class="div">
+							<h5>Full Name</h5>
+							<input id="name" type="text" class="input">
+							
+					</div>
+				</div>
+				<p id="error1"><span><i class="fas fa-exclamation-circle"></i></span> Please enter your valid name. </p>
+				
+				<div class="input-div one">
+					<div class="i">
+							<i class="fas fa-envelope"></i>
+					</div>
+					<div class="div">
+							<h5>Email</h5>
+							<input id="email" type="email" onclick="ValidateName()" class="input">
+					</div>
+				</div>
+				<p id="error2"><span><i class="fas fa-exclamation-circle"></i></span> Please enter valid email_id. </p>
+				
+				<div class="input-div one">
+					<div class="i">
+							<i class="fas fa-phone"></i>
+					</div>
+					<div class="div">
+							<h5>Phone No.</h5>
+							<input id="phone" type="tel" onclick="ValidateEmail()" class="input">
+					</div>
+				</div>
+				<p id="error3"><span><i class="fas fa-exclamation-circle"></i></span> Please enter valid 10-digit Ph_no. </p>
+				   
+				<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-calendar"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>DOB</h5>
+           		   		<input id="dob" type="text" onclick="ValidatePhone()" class="input">
+           		   </div>
+				</div>
+				<p id="error4"><span><i class="fas fa-exclamation-circle"></i></span> Please enter in format dd/mm/yyy. </p>
+				   
+				<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input id="password" type="password" onclick="ValidateDOB()" class="input">
+            	   </div>
+				</div>
+				<p id="error5"><span><i class="fas fa-exclamation-circle"></i></span> Password should be 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character. </p>
+				
+				<a href="#">Forgot Password?</a>
+				
+				<input type="button" class="btn" onclick="Register()" value="Register">
+				<p class="copyright">Copyright <span>&copy;</span> 2020 | Made By Hitesh Dhameja</p>
+			</form>
+
+		</div>
+
+	</div>
+	
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
